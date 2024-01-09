@@ -1,7 +1,14 @@
+import Container from "react-bootstrap/Container";
+import Header from "./components/Header";
+import { Outlet } from "react-router-dom";
+
 const App = () => {
   return (
     <>
-      <h1>MERN AUTH</h1>
+      <Header />
+      <Container className="my-2">
+        <Outlet />
+      </Container>
     </>
   );
 };
